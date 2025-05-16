@@ -1,0 +1,172 @@
+/* === GLOBAL STYLES === */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+h2, h4 {
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+/* === FORM ELEMENTS === */
+input, textarea {
+  padding: 12px;
+  margin: 8px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #4a6fa5;
+  outline: none;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* === BUTTONS === */
+button {
+  background: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background: #3a5a8f;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* === MESSAGE STYLES === */
+.message {
+  background: #f8f9fa;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border-left: 3px solid #4a6fa5;
+}
+
+.message p {
+  margin: 4px 0;
+  line-height: 1.5;
+}
+
+.message small {
+  color: #6c757d;
+  font-size: 0.8em;
+  display: block;
+  margin-top: 6px;
+}
+
+/* === WALLET STATUS === */
+#walletStatus {
+  background: #e8f4fd;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-family: monospace;
+  word-break: break-all;
+  display: none;
+}
+
+/* === FEE DISPLAY === */
+#messageFee {
+  color: #4a6fa5;
+  font-weight: bold;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* === LP BALANCE === */
+#lpBalance {
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+/* === LOG CONSOLE === */
+.log {
+  white-space: pre-wrap;
+  font-size: 14px;
+  margin-top: 20px;
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: monospace;
+  border: 1px solid #ddd;
+}
+
+/* === MESSAGE LIST === */
+.messages {
+  margin-top: 10px;
+  padding: 10px;
+  background: #eef;
+  border-radius: 6px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* === RESPONSIVE ADJUSTMENTS === */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  button {
+    padding: 10px 15px;
+  }
+}
+
+/* === UTILITY CLASSES === */
+.hr {
+  height: 1px;
+  background: #eee;
+  margin: 10px 0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatDApp - Monad Testnet</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.8.0/dist/ethers.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>ChatDApp - Monad Testnet</h2>
+    <div id="walletStatus">Not connected</div>
+    <button id="connectWalletBtn">Connect Wallet</button>
+
+    <div class="section">
+      <h4>Send Message</h4>
+      <input type="text" id="toAddress" placeholder="Recipient address">
+      <textarea id="msgContent" rows="3" placeholder="Type your message..."></textarea>
+      <div id="messageFee">Estimated fee: 0 MONAD</div>
+      <button id="sendMessageBtn">Send Message</button>
+    </div>
+
+    <div class="section">
+      <h4>LP Staking</h4>
+      <input type="text" id="lpAmount" placeholder="Amount in MONAD">
+      <button id="depositLPBtn">Deposit</button>
+      <button id="withdrawLPBtn">Withdraw</button>
+      <div id="lpBalance">Your LP Balance: 0</div>
+    </div>
+
+    <div class="section">
+      <h4>Messages</h4>
+      <input type="text" id="msgUser" placeholder="Address to check messages">
+      <button id="getMessagesBtn">Load Messages</button>
+      <div class="messages" id="messagesList"></div>
+    </div>
+    
+    <div class="log" id="log"></div>
+  </div>
+<script type="module" src="src/scripts/wallet.js"></script>
+<script type="module" src="src/scripts/config.js"></script>
+<script type="module" src="src/scripts/utils.js"></script>
+<script type="module" src="src/scripts/chat.js"></script>
+<script type="module" src="src/scripts/lp.js"></script>
+
+</body>
+</html>

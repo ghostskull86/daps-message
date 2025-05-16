@@ -1,5 +1,5 @@
 # daps-message
-Berikut deskripsi singkat (≤350 karakter) yang lebih spesifik untuk DApp pengirim pesan di jaringan Monad:  > A decentralized messaging DApp on Monad Testnet that lets users send public messages directly to the blockchain. Built with Solidity and Hardhat as a simple proof of concept.
+ A decentralized messaging DApp on Monad Testnet that lets users send public messages directly to the blockchain. Built with Solidity and Hardhat as a simple proof of concept.
 📨 DApps Message on Monad Testnet
 
 DApps Message is a simple decentralized application (DApp) built on the Monad Testnet that allows users to send and read on-chain messages. It serves as a proof of concept for basic communication on a high-performance, EVM-compatible blockchain.
